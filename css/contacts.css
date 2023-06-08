@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  padding-left: 70px;
+  background-color: #2e4ea1;
+  align-items: center;
+}
+
+.logo_text {
+  font-size: 48px;
+}
+.header-nav {
+  position: absolute;
+  right: 60px;
+}
+
+.header-nav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header-nav a:hover {
+  background-color: rgba(140, 167, 241, 0.8);
+}
+
+.header-nav a:active {
+  background-color: rgba(167, 186, 240, 0.8);
+}
+
+.contacts {
+  background-color: rgba(140, 167, 241, 0.8);
+}
+
+.nav-item {
+  padding: 10px;
+  margin-right: 70px;
+  border-radius: 12px;
+}
+
+.nav-item.login {
+  margin-right: 0px;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacts-block h1 {
+  font-size: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: black;
+}
+
+.tg-link {
+  display: flex;
+}
+
+.tg-img {
+  width: 50px;
+  height: 50px;
+}
+
+.contacts-block a {
+  margin-bottom: 50px;
+  display: block;
+  color: #2e4ea1;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contacts-block a:hover {
+  color: #1a2b57;
+}
+
+.contacts-block a:active {
+  color: #7996e1;
+}
+
+footer {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #2e4ea1;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+  margin-right: 100px;
+}
+
+.tg-icon {
+  width: 52px;
+}
+
+.git-icon {
+  width: 33px;
+  margin-right: 10px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link a:hover {
+  color: #000000;
+}
