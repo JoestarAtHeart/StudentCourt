@@ -49,10 +49,22 @@
           <p class="card-list-item">
             График работы: ПН-ПТ 10.00 - 17.00, СБ-ВС выходной
           </p>
-          <div class="feedback-window">
-            <div class="feedback-header">Отзывы</div>
-            <input type="text" name="message" class="feedback-input" />
-          </div>
+          <div id="anycomment-app"></div>
+<script>
+    AnyComment = window.AnyComment || [];
+    AnyComment.Comments = [];
+    AnyComment.Comments.push({
+        "root": "anycomment-app",
+        "app_id": "1corpus-2.html", // <--- замените на ID вашего сайта
+        "language": "ru"
+    })
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://widget.anycomment.io/comment/embed.js";
+    var sa = document.getElementsByTagName("script")[0];
+    sa.parentNode.insertBefore(s, s.nextSibling);
+</script>
       </main>
 
       <footer>
