@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentCourt</title>
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="logo_text">StudentCourt</p>
+        <nav class="header-nav">
+          <a class="nav-item cantins-list" href="../index.html"
+            >Список столовых</a
+          >
+          <a class="nav-item map" href="./map.html">Карта</a>
+          <a class="nav-item contacts" href="./contacts.html">Контакты</a>
+          <a class="nav-item login" href="./login.html">Вход</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="authorize-window">
+          <div class="authorize-head">Регистрация</div>
+          <div class="auth-fields">
+            <div class="login-field">
+              <p>Логин</p>
+              <input type="text" name="message" class="enter-login"/
+              onchange='checkLogin(this.value)'>
+            </div>
+            <div class="password-field">
+              <p>Пароль</p>
+              <input type="password" name="message" class="enter-password"/
+              onchange='checkPassword(this.value)'>
+            </div>
+          </div>
+          <button class="enter-button">Создать аккаунт</button>
+          <a class="create-account" href="../pages/login.html"
+            >У меня уже есть аккаунт</a
+          >
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-link">
+          <img class="git-icon" src="../img/git icon.png" />
+          <a href="https://t.me/+SKEd_DaAlx0wZWIy">StudentCourt</a>
+        </div>
+        <div class="footer-link">
+          <img class="tg-icon" src="../img/tg icon.png" />
+          <a href="https://t.me/+SKEd_DaAlx0wZWIy">StudentCourt</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+    function checkLogin(value) {
+      let r = /[^A-Z-a-z-0-9]/g;
+      if (value == "") {
+        alert("Введите логин!");
+      } else if (value.length < 6) {
+        alert("Логин слишком короткий!");
+      } else if (value.length > 20) {
+        alert("Логин слишком длинный!");
+      } else if (r.test(value)) {
+        alert("Запрещенные символы в логине (#, @, &...)!");
+      }
+    }
+    function checkPassword(value) {
+      let r = /[^A-Z-a-z-0-9]/g;
+      if (value == "") {
+        alert("Введите пароль!");
+      } else if (value.length < 6) {
+        alert("Пароль слишком короткий!");
+      } else if (value.length > 20) {
+        alert("Пароль слишком длинный!");
+      }
+  }
+</script>
